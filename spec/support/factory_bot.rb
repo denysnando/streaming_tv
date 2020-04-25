@@ -5,7 +5,8 @@ RSpec.configure do |config|
 
   config.before(:suite) do
     DatabaseCleaner.start
-    FactoryBot.lint
+    # TODO: Bring back FactoryBot lint when we're done with the models migration
+    # FactoryBot.lint
   ensure
     DatabaseCleaner.clean
   end

@@ -200,6 +200,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   database_cleaner (= 1.7.0)
+  factory_bot (= 5.0.2)
   factory_bot_rails (= 5.0.1)
   faker (= 1.9.3)
   fuubar (= 2.3.2)
