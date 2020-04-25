@@ -4,6 +4,7 @@ require 'rails_helper'
 
 RSpec.describe Season, type: :model do
   describe 'Relationships' do
+    it_behaves_like 'purchaseable'
     it { is_expected.to have_many(:episodes).inverse_of(:season).dependent(:restrict_with_error) }
   end
 

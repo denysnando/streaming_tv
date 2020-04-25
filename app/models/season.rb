@@ -2,6 +2,8 @@
 
 class Season < ApplicationRecord
   # Relationships
+  include Purchaseable
+
   has_many :episodes, inverse_of: :season, dependent: :restrict_with_error
 
   # Validations
