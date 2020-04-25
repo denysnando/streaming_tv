@@ -5,6 +5,7 @@ require 'rails_helper'
 RSpec.describe PurchaseOption, type: :model do
   describe 'Relationships' do
     it { is_expected.to belong_to(:purchaseable).inverse_of(:purchase_options).required }
+    it { is_expected.to have_many(:purchases).inverse_of(:purchase_option) }
   end
 
   describe 'Validations' do
