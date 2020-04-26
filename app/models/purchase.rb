@@ -30,6 +30,6 @@ class Purchase < ApplicationRecord
   end
 
   def set_expired_at
-    self.expired_at = Time.zone.now + 3.days
+    self.expired_at = Time.zone.now + 2.days
   end
 end

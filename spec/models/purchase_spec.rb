@@ -27,7 +27,7 @@ RSpec.describe Purchase, type: :model do
       it 'should set expired_at three days from now' do
         expect(@purchase.expired_at).to be_nil
         @purchase.save
-        expect(@purchase.expired_at).to eq(Time.zone.now + 3.days)
+        expect(@purchase.expired_at).to eq(Time.zone.now + 2.days)
       end
     end
   end
@@ -39,7 +39,7 @@ RSpec.describe Purchase, type: :model do
         @purchase_2 = build(:purchase)
       end
 
-      it 'should set expired_at three days from now' do
+      it 'should set expired_at two days from now' do
         expect(Purchase.count).to eq(1)
 
         @purchase_2.save
