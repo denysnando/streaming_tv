@@ -26,7 +26,7 @@ class Purchase < ApplicationRecord
     return unless Purchase.similar_purchase(user_id,
                                             purchase_option_id).not_expired.any?
 
-    errors.add(:puchase, 'You already have a purchase!')
+    errors.add(:purchase, 'similar, not expired yet!')
   end
 
   def set_expired_at

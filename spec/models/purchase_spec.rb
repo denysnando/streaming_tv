@@ -43,7 +43,7 @@ RSpec.describe Purchase, type: :model do
         expect(Purchase.count).to eq(1)
 
         @purchase_2.save
-        expect(@purchase_2.errors.full_messages).to eq(['Puchase You already have a purchase!'])
+        expect(@purchase_2.errors.full_messages.to_sentence).to eq('Purchase similar, not expired yet!')
       end
     end
   end
