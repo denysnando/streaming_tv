@@ -2,8 +2,8 @@
 
 FactoryBot.define do
   factory :purchase do
-    user { create(:user) }
-    purchase_option_id { create(:purchase_option) }
-    expired_at { Faker::Date.forward(days: 3) }
+    user_id { find_or_create(:user) }
+    purchase_option_id { find_or_create(:purchase_option) }
+    expired_at { Time.zone.now + 3.days }
   end
 end
