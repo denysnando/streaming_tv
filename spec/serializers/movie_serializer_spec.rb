@@ -9,9 +9,10 @@ RSpec.describe MovieSerializer, type: :serializer do
 
   describe '#attributes' do
     it 'return the list of expected attributes' do
-      %i[id title plot purchase_options].each do |attribute|
-        expect(serializer.attributes[attribute]).to eq(movie.send(attribute))
-      end
+      expect(serializer.as_json[:id]).to eq(movie.id)
+      expect(serializer.as_json[:title]).to eq(movie.title)
+      expect(serializer.as_json[:plot]).to eq(movie.plot)
+      expect(serializer.as_json[:created_at]).to eq(movie.created_at.strftime('%d/%m/%Y %H:%M:%S'))
     end
   end
 end
