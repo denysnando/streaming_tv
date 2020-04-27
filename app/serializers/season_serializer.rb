@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class SeasonSerializer < ActiveModel::Serializer
-  attributes :id, :title, :plot, :number, :created_at, :episodes
+  attributes :id, :title, :plot, :number, :created_at, :episodes, :purchase_options
 
   def episodes
     object.episodes.order(:number)

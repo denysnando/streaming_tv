@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class MovieSerializer < ActiveModel::Serializer
-  attributes :id, :title, :plot, :created_at
+  attributes :id, :title, :plot, :created_at, :purchase_options
 
   def created_at
     object.created_at.strftime('%d/%m/%Y %H:%M:%S')
