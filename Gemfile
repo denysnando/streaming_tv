@@ -23,6 +23,7 @@ group :development, :test do
   gem 'fuubar',                   '2.3.2'
   gem 'simplecov',                '0.16.1'
   gem 'rspec-simplecov',          '0.2.2'
+  gem 'pry'
 end
 
 group :development do
