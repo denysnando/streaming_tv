@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class SearchController < ApplicationController
+  caches_action :search_movies, :search_seasons, :search_all
+
   def search_movies
     @movies = Movie.all.order(:created_at)
 

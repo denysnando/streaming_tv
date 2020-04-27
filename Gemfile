@@ -6,7 +6,7 @@ gem 'rails',                     '~> 6.0.2', '>= 6.0.2.2'
 gem 'pg',                        '~> 0.21.0'
 gem 'bootsnap',                  '>= 1.4.2', require: false
 gem 'active_model_serializers',  '~> 0.10.2'
-
+gem 'actionpack-action_caching', '~> 1.1', '>= 1.1.1'
 # Server
 gem                'puma', '~> 4.1'
 

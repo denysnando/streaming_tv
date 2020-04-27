@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class PurchasesController < ApplicationController
+  caches_action :list_purchase
+
   def create
     purchase = Purchase.new(purchase_params)
 
