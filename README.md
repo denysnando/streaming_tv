@@ -7,8 +7,8 @@ Hi, this is Streaming Application
 Have the following features with their respective versions installed on the machine:
 
 - Ruby `2.7.1`
-- Postgres `11.1`
-- Bundler `1.16.1`
+- Postgres `12.2`
+- Bundler `2.1.4`
 
 ## Installation
 
