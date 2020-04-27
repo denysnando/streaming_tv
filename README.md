@@ -1,24 +1,41 @@
-# README
+## README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hi, this is Streaming Application
 
-Things you may want to cover:
+## Prerequisites
 
-* Ruby version
+Have the following features with their respective versions installed on the machine:
 
-* System dependencies
+- Ruby `2.7.1`
+- Postgres `11.1`
+- Bundler `1.16.1`
 
-* Configuration
+## Installation
 
-* Database creation
+After you get all the [prerequisites](#prerequisites), simply execute the following commands in sequence:
 
-* Database initialization
+1. `gem install pg -v '1.1.4'`
 
-* How to run the test suite
+## Seed
 
-* Services (job queues, cache servers, search engines, etc.)
+You can run the seed:
 
-* Deployment instructions
+`rake db:seed`
 
-* ...
+**START** with the following command:
+
+`rails s`
+
+## Specs
+
+To run the tests it is necessary to have the [prerequisites](#prerequisites) and have also completed the[installation](#installation) of dependencies.
+
+So, now just run the following command:
+
+`bundle exec rspec`
+
+and
+
+`open coverage/index.html` 100% coverage...
+
+##Thanks for the opportunity :+1:
