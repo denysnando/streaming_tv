@@ -46,7 +46,7 @@ RSpec.describe PurchasesController, type: :request do
     end
 
     it 'list a users purchases' do
-      get '/purchases/list_purchase/', params: { id: user.id }
+      get '/purchases/list_purchase/', params: { user_id: user.id }
 
       expect(JSON.parse(response.body).first['id']).to eq(@purchase.id)
       expect(JSON.parse(response.body).first['expired_at']).to eq(@purchase.expired_at.strftime('%d/%m/%Y %H:%M:%S'))

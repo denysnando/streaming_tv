@@ -14,7 +14,7 @@ class PurchasesController < ApplicationController
   end
 
   def list_purchase
-    @purchases = User.find(params[:id]).purchases.not_expired
+    @purchases = User.find(params[:user_id]).purchases.not_expired
 
     render json: @purchases, each_serializer: PurchaseSerializer
   end
