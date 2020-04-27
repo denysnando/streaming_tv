@@ -11,7 +11,7 @@ class Purchase < ApplicationRecord
 
   # Scope
   scope :not_expired, -> { where('expired_at > ?', Time.zone.now) }
-  scope :expired, -> { where('expired_at > ?', Time.zone.now) }
+  scope :expired, -> { where('expired_at < ?', Time.zone.now) }
   scope :similar_purchase, lambda { |user_id, purchase_option_id|
                              where(user_id: user_id,
                                    purchase_option_id: purchase_option_id)
