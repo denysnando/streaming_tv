@@ -26,6 +26,10 @@ You can run the seed:
 
 `rails s`
 
+## Documentation API
+
+There some example [here](https://documenter.getpostman.com/view/454703/SzfCSkPS?version=latest)
+
 ## Specs
 
 To run the tests it is necessary to have the [prerequisites](#prerequisites) and have also completed the[installation](#installation) of dependencies.
