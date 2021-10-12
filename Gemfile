@@ -8,7 +8,7 @@ gem 'bootsnap',                  '>= 1.4.2', require: false
 gem 'active_model_serializers',  '~> 0.10.2'
 gem 'actionpack-action_caching', '~> 1.1', '>= 1.1.1'
 # Server
-gem                'puma', '~> 4.1'
+gem                'puma', '~> 4.3'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
